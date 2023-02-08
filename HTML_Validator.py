@@ -49,5 +49,4 @@ def _extract_tags(html):
     >>> _extract_tags('Python <strong>rocks</strong>!')
     ['<strong>', '</strong>']
     '''
-    import re
     return re.findall(r'<\w+>', html)
