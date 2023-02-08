@@ -50,4 +50,4 @@ def _extract_tags(html):
     ['<strong>', '</strong>']
     '''
     import re
-    return re.findall(r'<.*?>', html)
+    return re.findall(r'<\w+>', html)
